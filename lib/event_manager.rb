@@ -134,6 +134,6 @@ highest_hour = @popular_times.max_by { |k, v| v }
 highest_hour[0] = highest_hour[0] > 12 ? (highest_hour[0] - 12).to_s + "pm" : highest_hour[0].to_s + "am"
 puts "The hour with the most traffic is #{highest_hour[0]} with #{highest_hour[1]} registrations during that time."
 
-# calculatr most popular weekday and display
+# calculate most popular weekday and display
 highest_day = @popular_date.max_by { |k, v| v }
 puts "The weekday with the most traffic is #{highest_day[0]} with #{highest_day[1]} regisrations during that time."
